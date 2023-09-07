@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="40.202" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="Login functionality" name="Web Tables" time="39.749">
+<system-out><![CDATA[
+Given Opens Browser.........................................................passed
+Given Launchs URL...........................................................passed
+And Checks if in User List Table Page.......................................passed
+When Hits Add button........................................................passed
+When Enters required details................................................passed
+And Hits save button........................................................passed
+Then Details should appear on the table.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

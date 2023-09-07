@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "2487c41e-fbca-4630-953b-72a2961e1ac0",
+		"name": "QA_Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20341976"
+	},
+	"item": [
+		{
+			"name": "DogAPI",
+			"item": [
+				{
+					"name": "01_ListDogBreeds",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Verify - retriever is within the list\",() => {\r",
+									"  pm.expect(pm.response.text()).to.include(\"retriever\");\r",
+									"});\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dog.ceo/api/breeds/list/all",
+							"protocol": "https",
+							"host": [
+								"dog",
+								"ceo"
+							],
+							"path": [
+								"api",
+								"breeds",
+								"list",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "03_RetrieverSubBreeds",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dog.ceo/api/breed/retriever/list",
+							"protocol": "https",
+							"host": [
+								"dog",
+								"ceo"
+							],
+							"path": [
+								"api",
+								"breed",
+								"retriever",
+								"list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "04_GoldenRandomImage",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://dog.ceo/api/breeds/image/random/golden",
+							"protocol": "https",
+							"host": [
+								"dog",
+								"ceo"
+							],
+							"path": [
+								"api",
+								"breeds",
+								"image",
+								"random",
+								"golden"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
